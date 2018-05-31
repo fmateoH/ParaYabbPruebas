@@ -82,7 +82,7 @@ public class CommitsActivity extends Activity {
 
         // Get GitHub API token from SharedPreferences
         SharedPreferences sharedPref = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
-        String defaultGithubToken = "YmY0MmE1MTMtM2I2Ny00MDUwLWEzZDYtMzNkYmYwMzg3N2Rl";
+        String defaultGithubToken = "";
         gitHubApiToken = sharedPref.getString("gitHubApiToken", defaultGithubToken);
 
         // If the user is not gitHub-authenticated --> start LoginActivity
